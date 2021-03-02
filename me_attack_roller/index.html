@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attack Manager</title>
+    <script src="js/attack_roller.js"></script>
+</head>
+<body>
+    <form>
+        <br>Fegyver:<br>
+        <input type="text" name="weaponName">
+        <select name="variant">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <br></br>Tűzgyorsaság:<br>
+        <input type="text" name="RoF">
+        <br>Támadó érték:<br>
+        <input type="text" name="attackBonus">
+        <br>Kritikus küszöb:<br>
+        <input type="text" name="critThreat">
+        <br>Célpont védője:<br>
+        <input type="text" name="targetsAC">
+        <br>
+        <br>
+        <input type="button" name="button" value="Támadás!" onClick="resolveAttack(this.form)">
+    </form>
+    <p id="numberOfHits"></p>
+    <p id="attackDetails"></p>
+</body>
+</html>
