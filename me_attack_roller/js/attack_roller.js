@@ -50,4 +50,5 @@ function resolveAttack (form) {
     }
     document.getElementById("numberOfHits").innerHTML = "Összesen: " + numberOfHits + " találat. " + numberOfcritHits + " kritkus találat. " + numberOfCritFailures + " balsiker.";
     document.getElementById("attackDetails").innerHTML = attackDetails;
+    localStorage.setItem('access_test', 'granted');
 }
