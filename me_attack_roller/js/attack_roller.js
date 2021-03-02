@@ -51,5 +51,5 @@ function resolveAttack (form) {
     var attack_summary = "Összesen: " + numberOfHits + " találat. " + numberOfcritHits + " kritkus találat. " + numberOfCritFailures + " balsiker.";
     document.getElementById("numberOfHits").innerHTML = attack_summary;
     document.getElementById("attackDetails").innerHTML = attackDetails;
-    window.postMessage(attack_summary, "https://lehelz.github.io/");
+    window.parent.postMessage(attack_summary, "*");
 }
