@@ -50,5 +50,5 @@ function resolveAttack (form) {
     }
     document.getElementById("numberOfHits").innerHTML = "Összesen: " + numberOfHits + " találat. " + numberOfcritHits + " kritkus találat. " + numberOfCritFailures + " balsiker.";
     document.getElementById("attackDetails").innerHTML = attackDetails;
-    window.postMessage("message", "https://app.roll20.net/editor/");
+    window.postMessage("message", "https://lehelz.github.io/");
 }
