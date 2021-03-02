@@ -16,7 +16,7 @@
             <option value="5">5</option>
             <option value="6">6</option>
         </select>
-        <br></br>Tűzgyorsaság:<br>
+        <br>Tűzgyorsaság:<br>
         <input type="text" name="RoF">
         <br>Támadó érték:<br>
         <input type="text" name="attackBonus">
@@ -26,7 +26,7 @@
         <input type="text" name="targetsAC">
         <br>
         <br>
-        <input type="button" name="button" value="Támadás!" onClick="resolveAttack(this.form)">
+        <input id="attack_button" type="button" name="button" value="Támadás!" onClick="resolveAttack(this.form)">
     </form>
     <p id="numberOfHits"></p>
     <p id="attackDetails"></p>
