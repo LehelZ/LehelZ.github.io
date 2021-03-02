@@ -51,5 +51,5 @@ function resolveAttack (form) {
     var attack_summary = "Összesen: " + numberOfHits + " találat. " + numberOfcritHits + " kritkus találat. " + numberOfCritFailures + " balsiker.";
     document.getElementById("numberOfHits").innerHTML = attack_summary;
     document.getElementById("attackDetails").innerHTML = attackDetails;
-    parent.postMessage(attack_summary, "https://app.roll20.net/editor/");
+    parent.postMessage(attack_summary, "https://app.roll20.net");
 }
